@@ -11,16 +11,27 @@ int main()
 	float B;
 	float X;
 
+	cout << "Hello! My name is Marcus, and I'm going to solve the equation:" << endl;
+	cout << "Ax + B = 0" << endl;
+	cout << "for x" << endl << endl;
+
 	cout << "Please enter a value for A: ";
 	cin >> A;
 
 	cout << "Please enter a value for B: ";
 	cin >> B;
+	
+	cout << endl;
 
-	cout << "A=" << A << endl;
+	cout << "Solving " << A;
+	cout << "x+" << B;
+	cout << "=0 for x..." << endl;
 
-	B = (A * 4) + 1;
-	cout << "And B=" << B << endl;
+	X = ((0 - B) / A);
+
+	cout << "The answer is: " << endl;
+	
+	cout << "x=" << X << endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
