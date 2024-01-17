@@ -7,11 +7,20 @@ using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	float A;
+	float B;
+	float X;
 
-    std::cout << std::endl;
+	cout << "Please enter a value for A: ";
+	cin >> A;
 
-    std::cout << "This is CGT 215!" << std::endl;
+	cout << "Please enter a value for B: ";
+	cin >> B;
+
+	cout << "A=" << A << endl;
+
+	B = (A * 4) + 1;
+	cout << "And B=" << B << endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
