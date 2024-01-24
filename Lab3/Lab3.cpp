@@ -15,9 +15,9 @@ void printMenu(int& choice) {
 	cin >> choice;
 }
 void getChoices(float& A, float& B) {
-	cout << "Please enter the first value:";
+	cout << "Please enter the first value: ";
 	cin >> A;
-	cout << "Please enter your second value:";
+	cout << "Please enter your second value: ";
 	cin >> B;
 }
 void firstChoice(float A, float B) {
