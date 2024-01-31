@@ -37,7 +37,7 @@ void arithmetic() {
 	int n = 0;
 	int count = 1;
 	int f = 1;
-	cout << "Arithmetic:" << endl << "Enter a number to start at: ";
+	cout << "Arithmetic Series:" << endl << "Enter a number to start at: ";
 	cin >> S;
 	cout << "Enter a number to add each time: ";
 	cin >> D;
@@ -64,7 +64,7 @@ void geometric() {
 	int n = 0;
 	int count = 1;
 	int f = 1;
-	cout << "Geometric:" << endl << "Enter a number to start at: ";
+	cout << "Geometric Series:" << endl << "Enter a number to start at: ";
 	cin >> a;
 	cout << "Enter a number to multiply by each time: ";
 	cin >> r;
