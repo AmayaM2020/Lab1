@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SFPhysics</id>
+    <version>2.2.1</version>
+    <title>SFPhysics</title>
+    <authors>Jeffrey Kesselman</authors>
+    <owners>Jeffrey Kesselman</owners>
+    <description>
+      A simple 2D physics package for SFML.  It only supports circular and AABB bounds.
+      It makes no attempt to detect or handle inter-frame collision misses.  It is
+      however perfectly suitable for most classic 2D games.
+
+      Version 2.2.1 contains a bug fix in the new world update code
+
+      Version 2.2.0 has been released. There are 2 API changes
+      (1) PhysicsShapeList&lt;T&gt; now rerturns a T* from its iterator 
+      (2) UpdatePhysics now takes an optional second parameter of a 
+      fixed MS per upate. It will loop and make multiple updates as 
+      necessary for the frame deltaMS.  This allows the programmer to
+      tradeoff compute time for better acuray.  A value of 0 sets the
+      update period to the current frame deltaMS, which is to say 
+      it mimics the old behavior of one update per call.
+   
+      Basic documentation is at https://github.com/profK/SFPhysics.
+
+    </description>
+    <releaseNotes></releaseNotes>
+    <summary>
+      Simple 2D Physics for SFML
+    </summary>
+    <language>en-US</language>
+    <!-- <projectUrl>TBA</projectUrl> -->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <copyright>Jeffrey Kesselman 2022</copyright>
+    <dependencies>
+    </dependencies>
+    <references></references>
+    <tags>native</tags> <!-- This is important ! -->
+  </metadata>
+  <files>
+      <!-- Note that now, binaries are placed conventionally under a directory named build -->
+      <file src="..\SFPhysics\include\**" target="build\native\include" />
+      <file src="..\Release\SFPhysics.*" target="build\native\Win32\Release\bin" />
+      <file src="..\x64\Release\SFPhysics.*" target="build\native\x64\Release\bin" />
+      <file src="..\Debug\SFPhysics.*" target="build\native\Win32\Debug\bin" />
+      <file src="..\x64\Debug\SFPhysics.*" target="build\native\x64\Debug\bin" />
+      <file src="SFPhysics.props" target="build" />
+      <file src="SFPhysics.targets" target="build" />
+  </files>
+</package>
